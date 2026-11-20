@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eunje Choi</title>
+<meta name="description" content="Eunje Choi — M.S. student at POSTECH working on robot learning and precise visuomotor control.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <h1>Eunje Choi</h1>
+    <p class="role">M.S. Student · CoCEL, POSTECH · Advisor: Prof. Soohee Han</p>
+    <p class="intro">
+      I study how robots can learn precise control from demonstrations.
+      My recent work conditions visuomotor policies on geometric
+      representations to reach millimeter-scale alignment in unseen environments,
+      and I am now building teleoperation interfaces for humanoid robots.
+    </p>
+    <nav class="links">
+      <a href="mailto:eunjechoi@postech.ac.kr">Email</a>
+      <a href="tel:+821071065302">Phone</a>
+      <a href="https://github.com/pwsmd">GitHub</a>
+      <a href="https://arxiv.org/abs/2610.22997">arXiv</a>
+      <a href="#cv">CV</a>
+    </nav>
+  </header>
+
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul class="interests">
+      <li><strong>Robot learning &amp; imitation learning</strong> — visuomotor policies (e.g., diffusion policies) learned from real-world demonstrations</li>
+      <li><strong>Precise mobile robot control</strong> — goal-conditioned, last-centimeter alignment such as autonomous docking</li>
+      <li><strong>Representation learning for control</strong> — pretrained geometric and visual encoders as priors for policies</li>
+      <li><strong>Humanoid teleoperation</strong> — VR and wearable-sensor interfaces for whole-body data collection</li>
+      <li><strong>Interpretable robot policies</strong> — explaining what learned policies rely on when they act</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <article class="pub">
+      <h3>GR-VIP: Geometric Representation Conditioning for Precise Visuomotor Policy</h3>
+      <p class="authors">
+        Chanhwi Lee*, Jiwon Seong*, <span class="me">Eunje Choi</span>, Hohyung Lee, Jongsoo Lee,
+        Junyeong Bae, Inveom Kwak, Woosang Shin†, Soohee Han†
+      </p>
+      <p class="venue">Submitted to IEEE Robotics and Automation Letters (RA-L), 2026</p>
+      <p class="pub-links"><a href="https://arxiv.org/abs/2610.22997">arXiv</a><a href="https://arxiv.org/pdf/2610.22997">PDF</a></p>
+      <p class="summary">
+        A goal-conditioned visuomotor policy that uses dense relational features from an encoder
+        pretrained for relative camera pose estimation. On a real-world docking task it reaches
+        millimeter-scale terminal accuracy and transfers to unseen environments and docks without
+        additional training.
+      </p>
+      <p class="note">* equal contribution · † corresponding authors</p>
+    </article>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="item">
+      <div class="item-head">
+        <h3>Humanoid Teleoperation Interface</h3>
+        <span class="date">2026 – present</span>
+      </div>
+      <p class="sub">Research project · POSTECH</p>
+      <p>Building a teleoperation pipeline for collecting humanoid demonstration data: Meta Quest 3
+        (WebXR) for upper-body tracking and ankle-mounted wireless IMUs for the legs, connected to
+        an Isaac Lab simulator.</p>
+    </article>
+
+    <article class="item">
+      <div class="item-head">
+        <h3>Humanoid Box Loco-Manipulation</h3>
+        <span class="date">2026</span>
+      </div>
+      <p class="sub">Research project · POSTECH</p>
+      <p>Worked on a finite-state-machine pipeline for a Unitree G1 humanoid carrying boxes in
+        simulation; improved the hand grip during the carry phase.</p>
+    </article>
+
+    <article class="item">
+      <div class="item-head">
+        <h3>Transformer-Based Universal Error Correction Code Decoder</h3>
+        <span class="date">2025</span>
+      </div>
+      <p class="sub">Capstone Design Project I</p>
+      <p>Error correction code decoder built on the Transformer architecture, evaluated across code
+        rates and noise conditions in PyTorch.</p>
+    </article>
+
+    <article class="item">
+      <div class="item-head">
+        <h3>Control of a Neuromeka Robotic Arm</h3>
+        <span class="date">2025</span>
+      </div>
+      <p class="sub">Introduction to Robotics</p>
+      <p>Controlled a Neuromeka robotic arm using robot kinematics and motion control for precise
+        movement and task execution.</p>
+    </article>
+
+    <article class="item">
+      <div class="item-head">
+        <h3>Inverted Pendulum Control System</h3>
+        <span class="date">2025</span>
+      </div>
+      <p class="sub">Systems Control</p>
+      <p>Designed a real-time feedback control system that balances an inverted pendulum, implemented
+        and tested on hardware with integrated sensors and actuators.</p>
+    </article>
+
+    <article class="item">
+      <div class="item-head">
+        <h3>Convolution Layer Hardware</h3>
+        <span class="date">2022</span>
+      </div>
+      <p class="sub">Introduction to VLSI Design</p>
+      <p>CNN convolution layer designed in Verilog, with RTL simulation, gate-level synthesis, and
+        latency and area analysis.</p>
+    </article>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+
+    <h3 class="cv-group">Education</h3>
+    <div class="row"><span>M.S. Student, POSTECH — CoCEL (Advisor: Prof. Soohee Han)</span><span class="date">2026 –</span></div>
+    <div class="row"><span>B.S. in Electrical Engineering, POSTECH</span><span class="date">2019 – 2026</span></div>
+    <div class="row"><span>Exchange Student, University of Tokyo</span><span class="date">2022 – 2023</span></div>
+    <div class="row"><span>Visiting Student (Summer Session), KAIST</span><span class="date">2020</span></div>
+
+    <h3 class="cv-group">Research Experience</h3>
+    <div class="row"><span>Research Student Intern, POSTECH BEVIL Lab — scan chain chip design in Verilog</span><span class="date">2021</span></div>
+
+    <h3 class="cv-group">Teaching &amp; Mentoring</h3>
+    <div class="row"><span>Tutor, General Physics I (Student Mentoring Program, POSTECH)</span><span class="date">2022, 2023</span></div>
+    <div class="row"><span>Mentor, POSTECH Online Mentoring Program (middle school science)</span><span class="date">2021 – 2022</span></div>
+
+    <h3 class="cv-group">Other</h3>
+    <div class="row"><span>Student Journalist, The Postech Times</span><span class="date">2019 – 2021</span></div>
+    <div class="row"><span>Sergeant, Republic of Korea Marine Corps — Chief of Naval Operations' Commendation</span><span class="date">2023 – 2024</span></div>
+
+    <h3 class="cv-group">Skills</h3>
+    <p class="skills">Python · PyTorch · C · Verilog · Isaac Lab · MATLAB · SolidWorks · Xilinx Vivado</p>
+    <p class="skills">Korean (native) · English (TOEIC 890) · Japanese (JLPT N1)</p>
+  </section>
+
+  <footer>
+    <p>Email: <a href="mailto:eunjechoi@postech.ac.kr">eunjechoi@postech.ac.kr</a></p>
+    <p>Phone: <a href="tel:+821071065302">+82 10-7106-5302</a></p>
+    <p class="muted">Last updated November 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
